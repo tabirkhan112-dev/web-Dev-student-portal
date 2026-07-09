@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Dev Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <h2 class="logo">MySite</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li class="dropdown">
+      <a href="#">Forms ▼</a>
+      <ul class="dropdown-content">
+        <li><a href="#login">Login / Signup</a></li>
+        <li><a href="#student-form">Student Form</a></li>
+      </ul>
+    </li>
+    <li><a href="#students">Students</a></li>
+    <li><a href="#cards">Cards</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Web Development</h1>
+    <p>Learn HTML, CSS and JavaScript</p>
+  </div>
+</section>
+
+<!-- Login + Signup -->
+<section id="login" class="form-section">
+
+  <div class="form-box">
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="form-box">
+    <h2>Signup</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+
+</section>
+
+<!-- Student Table -->
+<section id="students" class="table-section">
+  <h2>Student Details</h2>
+
+  <table>
+    <tr>
+      <th>Full Name</th>
+      <th>Father Name</th>
+      <th>Email</th>
+      <th>Gender</th>
+      <th>DOB</th>
+      <th>Nationality</th>
+    </tr>
+  </table>
+
+</section>
+
+<!-- Student Form -->
+<section id="student-form" class="form-section">
+
+  <div class="form-box full">
+    <h2>Add Student</h2>
+
+    <form>
+
+      <input type="text" placeholder="Full Name" required>
+
+      <input type="text" placeholder="Father Name" required>
+
+      <input type="email" placeholder="Email" required>
+
+      <select required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <input type="date" required>
+
+      <input type="text" placeholder="Nationality" required>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </div>
+
+</section>
+<!-- Student + Product Cards -->
+<section id="cards" class="cards-section">
+
+  <h2>Our Students & Products</h2>
+
+  <div class="cards-container">
+
+    <div class="card">
+      <img src="images/student1.jpg" alt="Hilal">
+      <h3>Hilal Khan</h3>
+      <p>HTML, CSS Expert</p>
+      <small>Web Dev Course</small>
+    </div>
+
+    <div class="card">
+      <img src="images/student2.jpg" alt="sara">
+      <h3>Sara Ahmed</h3>
+      <p>JavaScript Lover</p>
+      <small>JS Course</small>
+    </div>
+
+    <div class="card">
+      <img src="images/student3.jpg" alt="Hamza">
+      <h3>Hamza Ali</h3>
+      <p>UI/UX Designer</p>
+      <small>Design Course</small>
+    </div>
+
+    <div class="card">
+      <img src="images/product1.jpg" alt="laptop">
+      <h3>Laptop Bag</h3>
+      <p>Waterproof + Stylish</p>
+      <small>Rs 2500</small>
+    </div>
+
+    <div class="card">
+      <img src="images/product2.jpg" alt="wireless mouse">
+      <h3>Wireless Mouse</h3>
+      <p>Ergonomic Design</p>
+      <small>Rs 1200</small>
+    </div>
+
+    <div class="card">
+      <img src="images/student3.jpg" alt="keyboard">
+      <h3>Keyboard</h3>
+      <p>Mechanical Keys</p>
+      <small>Rs 3500</small>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
